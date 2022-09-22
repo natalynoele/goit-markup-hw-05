@@ -30,13 +30,13 @@
         <nav>
           <ul class="menu style-none">
             <li class="menu-item">
-              <a class="menu-link current activated no-decoration" href="./index.html">Студія</a>
+              <a class="menu-link current no-decoration" href="./index.html">Студія</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link activated no-decoration" href="./portfolio.html">Портфоліо</a>
+              <a class="menu-link no-decoration" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link activated no-decoration" href="#contacts">Контакти</a>
+              <a class="menu-link no-decoration" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +44,7 @@
           <li class="communication-item">
            
             <a
-              class="communication-link activated no-decoration"
+              class="communication-link no-decoration"
               href="mailto:info@devstudio.com"
               rel="noopener noreferrer nofollow"
               target="_blank"
@@ -56,7 +56,7 @@
             >
           </li>
           <li class="communication-item">
-            <a class="communication-link activated no-decoration" href="tel:+380961111111"
+            <a class="communication-link no-decoration" href="tel:+380961111111"
               >
               <svg width="10" height="16" class="icon-communication">
                   <use href="./images/sprite.svg#smartphone"></use>
@@ -71,8 +71,19 @@
       <!-- Hero section -->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn cursor">Замовити послугу</button>
-      </section>
+        <button type="button" class="hero-btn cursor" data-modal-open>Замовити послугу</button>
+           </section>
+           <!-- Modal -->
+                <div class="backdrop">
+      <div class="modal">   
+        <div class="close-wrap">
+<svg width="11" height="11" class="close-black">
+          <use href="./images/sprite.svg#close-black-18dp"></use>
+        </svg>
+        </div>
+             
+      </div> 
+      </div>   
       <!-- Features Section-->
       <section class="section features">
         <div class="container">
@@ -133,30 +144,33 @@
           <ul class="works-list style-none">
             <li class="works-item">
               <img
-                class="full-width"
+                class="works-img full-width"
                 src="./images/programer-working-his-desk-office.jpg"
                 alt="програміст праціює за робочим столом"
                 width="370"
                 height="294"
               />
+              <h3 class="works-item-title">Десктопні додатки</h3>
             </li>
             <li class="works-item">
               <img
-                class="full-width"
+                class="works-img full-width"
                 src="./images/designers-are-developing-application.jpg"
                 alt="дизайнери розробляють додаток для смартфонів команда працює над інтерфейсом мобільних телефонів"
                 width="370"
                 height="294"
               />
+              <h3 class="works-item-title">Мобільні додатки</h3>
             </li>
             <li class="works-item">
               <img
-                class="full-width"
+                class="works-img full-width"
                 src="./images/creative-artist-web-design.jpg"
                 alt="креативний веб дизайнер обирає кольори на графічному планшеті"
                 width="370"
                 height="294"
               />
+              <h3 class="works-item-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -389,7 +403,7 @@
                   href="https://goo.gl/maps/mMnY23ugtFwCM5wb8"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
-                  class="address activated no-decoration"
+                  class="address no-decoration"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
@@ -398,12 +412,12 @@
                   href="mailto:info@devstudio.com"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
-                  class="contacts-link activated no-decoration"
+                  class="contacts-link no-decoration"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contacts-item">
-                <a href="tel:+380961111111" class="contacts-link activated no-decoration"
+                <a href="tel:+380961111111" class="contacts-link no-decoration"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -443,6 +457,6 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer>  
   </body>
 </html>
